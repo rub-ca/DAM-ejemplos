@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    background-color: aliceblue;
+}
+
+html {
+    text-align: center;
+}
+
+span {
+    color: rgb(199, 180, 71);
+}
+
+header {
+    margin-top: 1rem;
+
+    p {
+        margin: 2rem;
+    }
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    label {
+        margin: 1rem;
+    }
+
+    input {
+        height: 2rem;
+    }
+}
+
+#boton {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 35%;
+    margin-bottom: 3rem;
+}
+
+.s-proyectos {
+    h1 {
+        margin: 2rem;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    div {
+        margin-bottom: 5rem;
+    }
+}
+
+/*Pantalla ordenador*/
+@media (min-width: 800px) {
+    .s-lenguajes {
+        display: flex;
+        margin-bottom: 4rem;
+        justify-content: center;
+
+        div {
+            margin-top: 1rem;
+            width: 400px;
+        }
+    }
+
+    .s-proyectos {
+
+        display: flex;
+        margin-bottom: 4rem;
+        justify-content: center;
+
+        div {
+            width: 600px;
+            padding: 4rem;
+        }
+    }
+
+    input {
+        width: 50%;
+    }
+
+    textarea {
+        width: 50%;
+        height: 8rem;
+    }
+}
+
+/*Pantalla telefono*/
+@media (max-width: 800px) {
+    .s-lenguajes {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4rem;
+
+        div {
+            margin-top: 1rem;
+        }
+    }
+
+    input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
+        height: 8rem;
+    }
+
+}

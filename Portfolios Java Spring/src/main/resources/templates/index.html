@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+<header>
+    <h1 th:text="${persona.nombre}"></h1>
+    <h2 th:text="${persona.apellidos}"></h2>
+    <p th:text="${persona.sobremi}"></p>
+</header>
+
+<h2>Habilidades:</h2>
+<section class="s-lenguajes">
+    <div th:each="lengu: ${lenguajes}">
+        <h2 th:text="${lengu.nombre}">Java</h2>
+        <span th:each="qwerty: ${lengu.getNivel()}">★</span>
+    </div>
+</section>
+
+<h2>Proyectos:</h2>
+<section class="s-proyectos">
+    <div th:each="proyec: ${proyectos}">
+        <h3 th:text="${proyec.nombre}"></h3>
+        <a th:href="${proyec.url}"><img th:src="${proyec.imagen}" alt=""></a>
+        <p th:text="${proyec.descripcion}"></p>
+        <h3>Tecnologias utilizadas:</h3>
+        <h4 th:each="lenutil: ${proyec.lenguajesUtilizados}" th:text="${lenutil.nombre}"></h4>
+    </div>
+</section>
+
+<footer>
+    <h2>Contacto</h2>
+    <form method="post" action="/">
+        <label for="email">Email:</label><input type="text" name="email" id="email" value="">
+        <label for="asunto">Asunto:</label><input type="text" name="asunto" id="asunto" value="">
+        <label for="cuerpo">Mensaje:</label><textarea name="cuerpo" id="cuerpo"></textarea>
+        <input type="submit" value="Enviar" id="boton">
+    </form>
+</footer>
+
+</body>
+
+</html>

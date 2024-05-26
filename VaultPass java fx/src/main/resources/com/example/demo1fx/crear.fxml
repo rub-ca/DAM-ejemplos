@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="259.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1fx.controladores.ControladorCrear">
+   <children>
+      <TextField fx:id="cajaNombre" layoutX="155.0" layoutY="14.0" prefHeight="33.0" prefWidth="242.0" />
+      <Text layoutX="20.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="110.13671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cajaSitio" layoutX="155.0" layoutY="70.0" prefHeight="33.0" prefWidth="242.0" />
+      <Text layoutX="20.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sitio" wrappingWidth="110.13671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cajaPass" layoutX="153.0" layoutY="124.0" prefHeight="33.0" prefWidth="242.0" />
+      <Text layoutX="18.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pass" wrappingWidth="110.13671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="botonVolver" layoutX="13.0" layoutY="192.0" mnemonicParsing="false" onAction="#onClickVolver" prefHeight="46.0" prefWidth="125.0" text="VOLVER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="botonCrear" layoutX="165.0" layoutY="192.0" mnemonicParsing="false" onAction="#onClickCrearContra" prefHeight="46.0" prefWidth="232.0" text="CREAR CONTRASEÑA" />
+   </children>
+</AnchorPane>
